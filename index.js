@@ -2,7 +2,7 @@ import {
   Scene,
   PerspectiveCamera,
   WebGLRenderer,
-} from 'three'
+} from './mod/three.module.js'
 
 import cube from './cube'
 
@@ -27,8 +27,11 @@ const onWindowResize = () => {
 }
 
 
+camera.position.z = 15
+
+
 scene.add(cube)
-camera.position.z = 5
+
 
 // Animation loop
 const animate = () => {
